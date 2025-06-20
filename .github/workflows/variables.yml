@@ -1,7 +1,7 @@
 name: Workflow Demo
 
 on: 
-  push
+  push:
 
 env:
   ACCESS_ID: ${{ vars.ACCESS_ID }}
@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Echo ACCESS_ID
-      run: echo $ACCESS_ID
+      - name: Echo ACCESS_ID
+        run: echo $ACCESS_ID
