@@ -1,8 +1,10 @@
 name: Workflow Demo
 
 on:
-  schedule:
-    - cron: '*/1 * * * *'  # every minute
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '*/1 * * * *'  # every minute
+
 
 env:
   ACCESS_ID: ${{ vars.ACCESS_ID }}
